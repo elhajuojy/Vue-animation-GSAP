@@ -18,6 +18,7 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam delectus officia dolorem obcaecati voluptate accusamus sed id omnis asperiores voluptatibus. Corrupti excepturi fuga iusto quis iste sint nulla vel rem.
     </p>
   </div>
+  
 </template>
 
 <script>

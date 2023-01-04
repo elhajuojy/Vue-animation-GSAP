@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:"/vue-animation/",
+  base:"/Vue-animation-GSAP/",
   plugins: [vue()],
   resolve: {
     alias: {
