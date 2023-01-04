@@ -4,7 +4,7 @@
       <Toast v-if="showToast" />
     </transition>
     <Todos @badValue="triggerToast" />
-    <div class="container">
+    <!-- <div class="container">
       <div class="container">
         <transition name="toggle">
         <div v-if="showP" class="toggle">
@@ -15,7 +15,7 @@
           Toggle me 
         </button>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
