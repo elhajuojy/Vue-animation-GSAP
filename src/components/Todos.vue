@@ -7,11 +7,11 @@
       placeholder="Add a new todo..."
     />
     <div v-if="todos.length">
-      <ul>
+      <transition-group tag="ul" name="list">
         <li v-for="todo in todos" :key="todo.id" @click="deleteTodo(todo.id)">
           {{ todo.text }}
         </li>
-      </ul>
+      </transition-group>
     </div>
     <div v-else>Woohoo, nothing left todo!</div>
   </div>
@@ -48,6 +48,33 @@ export default {
 </script>
 
 <style>
+  .list-enter-from{
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  
+  .list-enter-to{
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .list-enter-active{
+    transition: all 0.4s ease;
+  }
+  .list-leave-from{
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .list-leave-to{
+    opacity: 0;
+    transform: scale(1);
+  }
+  
+  .list-leave-active{
+   /* position: absolute;*/
+    transition: all 0.4s ease;
+  }
   .todos {
     max-width: 400px;
     margin: 20px auto;
